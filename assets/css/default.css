@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+
+:root {
+  --color-font-orange: #E9B224;
+  --color-font-white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Yatra One', cursive;
+}
+
+body {
+  background: url("../images/game-of-thrones-zombies-night-king-art\ 1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  padding: 0px 77px;
+  height: 88px;
+  height: 88px;
+  background: rgba(85, 85, 85, 0.2);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: var(--color-font-orange);
+}
+
+.aboutLink {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-font-white);
+}
+
+@media only screen and (max-width: 432px) {
+  header {
+    padding: 17px;
+  }
+}

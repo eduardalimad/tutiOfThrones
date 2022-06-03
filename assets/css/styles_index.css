@@ -1,0 +1,55 @@
+@import "default.css";
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 66px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+}
+
+.characters {
+  width: 193px;
+  height: 277px;
+}
+
+.characters {
+  width: 193px;
+  height: 277px;
+
+}
+
+.subtitle {
+  width: 100%; /* tamanho da borda da legenda */
+  height: 64px;
+  position: relative;
+  bottom: 60px; /* posição da borda legenda */
+  z-index: 10;
+  background: linear-gradient(358.3deg, #000000 -23.57%, rgba(39, 39, 39, 0) 240.07%);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px; /* texto da legenda */
+  line-height: 30px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media only screen and (max-width: 532px) {
+  main {
+    justify-content: center;
+  }
+
+  .characters {
+    width: 360px;
+    height: 474px;
+  }
+
+  .subtitle {
+    font-size: 40.2073px;
+  }
+}

@@ -1,0 +1,63 @@
+@import "default.css";
+
+main {
+  width: 100%;
+  margin: 44px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.imgCharacter {
+  width: 40%;
+  min-width: 426px;
+  height: auto;
+  min-height: 505px;
+  padding: 0px 60px;
+}
+
+.imgCharacter>img {
+  width: 90%;
+  height: 70%;
+}
+
+.description {
+  width: 60%;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.514);
+  padding: 42px 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.descriptionText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.titleDescription {
+  color: var(--color-font-white);
+}
+
+.contentDescription {
+  color: var(--color-font-orange);
+}
+
+@media only screen and (max-width: 1065px) {
+  main {
+    justify-content: center;
+  }
+
+  .description {
+    width: 100%;
+    align-items: center;
+  }
+
+  .imgCharacter {
+    min-width: 355.14px;
+    min-height: 400px;
+  }
+}

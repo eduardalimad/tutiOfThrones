@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personagem</title>
+
+  <link rel="stylesheet" href="../assets/css/styles_characters.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="titleLink"> TutiOfThrones </a>
+    <a href="about.html" class="aboutLink"> About </a>
+  </header>
+  <main>
+    <di id="imgChange" class="imgCharacter">
+    </di>
+    <div class="description">
+      <p>
+        <span class="descriptionText titleDescription">First Name:</span>&nbsp;&nbsp;
+        <span id="firstNameText" class="descriptionText contentDescription"></span>
+      </p>
+      <p>
+        <span class="descriptionText titleDescription">Last Name:</span>&nbsp;&nbsp;
+        <span id="lastNameText" class="descriptionText contentDescription"></span>
+      </p>
+      <p>
+        <span class="descriptionText titleDescription">Full Name:</span>&nbsp;&nbsp;
+        <span id="fullNameText" class="descriptionText contentDescription"> </span>
+      </p>
+      <p>
+        <span class="descriptionText titleDescription">Title:</span>&nbsp;&nbsp;
+        <span id="titleText" class="descriptionText contentDescription"> </span>
+      </p>
+      <p>
+        <span class="descriptionText titleDescription">Family:</span>&nbsp;&nbsp;
+        <span id="familyText" class="descriptionText contentDescription"></span>
+      </p>
+    </div>
+  </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script src="/assets/js/api.mjs"></script>
+
+<script>
+  (() => {
+    'use strict';
+    renderCharactersById(captureGetInfo().id);
+  })();
+</script>
+
+</html>
